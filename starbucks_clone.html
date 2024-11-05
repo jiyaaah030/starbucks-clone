@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starbucks Coffee Company</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #006241, #006241);
+  clip-path: circle(30% at right 70%);
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  background-color: #006241;
+}
+
+.logo {
+  max-height: 70px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.container {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.text-box {
+  max-width: 600px;
+}
+
+h2 {
+  color: black;
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+span {
+  color: #006241;
+}
+
+p {
+  color: brown;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  background: pink;
+  color: green;
+  border-radius: 40px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+  background: #e2b04a;
+  color: white;
+}
+
+.coffee-cont{
+  float: right;
+  padding-left: 25px;
+}
+
+.coffee-cup {
+  position: relative;
+  max-width: 250px;
+  max-height: 200px;
+}
+
+.coffee-cup img {
+  max-width: 100%;
+  filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5));
+  border-radius: 50%;
+  height: 100%;
+  padding-right: 20px;
+}
+
+footer{
+  color: white;
+  height: 30%;
+  width: 100%;
+  max-width: 100%;
+}
+
+.section1{
+  padding: 10px;
+  height: 150px ;
+  background-color: #006241;
+}
+
+.section2{
+  padding: 10px;
+  height: 150px ;
+  background-color: #006241;
+}
+
+.product{
+  width: 20%;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 0 5px #cccc;
+}
+
+.social-icon{
+  float: right;
+  margin-left: 200px;
+  padding: 10px;
+}
+
+.footer-link{
+  float: inline-start;
+  margin-top: 100px;
+}
+
+.col{
+  width: 50%;
+}
+
+.box{
+  background-color: #dc0032;
+  height: 550px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+}
+
+.box2{
+  background-color: #006241;
+  height: 550px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+}
+
+.box3{
+  background-color: pink;
+  height: 550px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+}
+
+.box4{
+  background-color: #006241;
+  height: 550px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+}
+
+.box5{
+  background-color: #006241;
+  height: 550px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+}
+
+.box6{
+  background-color: #dc0032;
+  height: 550px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+}
+
+h1{
+  text-align: center;
+  color: white;
+  margin-top: 20%;
+  font-size: 70px;
+}
+
+h3{
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+.button{
+  margin: 30px;
+  margin-left: 40%;
+  margin-top: 40px;
+}
+
+.btn2{
+  display: inline-block;
+  padding: 10px 30px;
+  color: white;
+  border-radius: 35px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  display: inline-block;
+    background: none;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50px;
+    padding: 7px 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.btn2:hover{
+  transform: scale(0.98);
+  background: maroon;
+  color: white;
+}
+.box-img{
+  height: 100%;
+  width: 100%;
+  
+}
+
+.box-col1{
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.box-col2{
+  width: 50%;
+  height: 100%;
+  float: right;
+}
+
+.discription{
+  box-sizing: content-box;
+  height: 200px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.content{
+  box-sizing: content-box;
+  text-align: center;
+  font-size: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
+  padding-top: 40px;
+}
+  </style>
+</head>
+<body>
+  <section>
+    <div class="circle"></div>
+    <header>
+      <a href="#"><img src="https://logos-world.net/wp-content/uploads/2020/09/Starbucks-Logo-1992-2011.png" class="logo"></a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">What's New</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    <div class="container">
+      <div class="text-box">
+        <h2>Its not just a Coffee <br>Its <span>Starbucks</span></h2>
+        <p>La empresa en sí es una empresa muy exitosa. Cualquiera, qué.</p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+    </div>
+    <div class="coffee-cont">
+      <div class="coffee-cup">
+        <img src="https://imgix.ranker.com/user_node_img/50098/1001940826/original/caramel-frappuccino-blended-coffee-photo-u4?fit=crop&fm=pjpg&q=60&w=375&dpr=2" alt="coffee">
+      </div>
+      </div>
+  </section>
+  <main>
+    <div class="box">
+      <div class="box-col1">
+        <h1>Last-minute merry</h1>
+        <h3>A Starbucks eGift is quick to send and a joy to receive. Perfect for anyone on your list.
+        </h3>
+        <div class="button">
+        <a href="#" class="btn2">Send an eGift</a>
+        </div>
+      </div>
+      <div class="box-col2">
+        <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-87905.jpg" alt="hjk" class="box-img">
+      </div>
+    </div>
+    <div class="box2">
+      <div class="box-col2">
+        <h1>Half off for the holidays</h1>
+        <h3>Feeling festive? Starbucks® Rewards members can get half off a drink on Thursday afternoons (12-6 PM) in December.*
+        </h3>
+        <div class="button">
+        <a href="#" class="btn2">Join for free</a>
+        </div>
+      </div>
+      <div class="box-col1">
+        <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-87802.jpg" alt="hjs" class="box-img">
+      </div>
+    </div>
+    <div class="box3">
+      <div class="box-col1">
+        <h1>The game is on!</h1>
+        <h3>There’s still time to play Starbucks for Life! This year we’re giving away over 10 million prizes.**
+        </h3>
+        <div class="button">
+        <a href="#" class="btn2">Play now</a>
+        </div>
+      </div>
+      <div class="box-col2">
+        <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-87728.png" alt="sdg" class="box-img">
+      </div>
+    </div>
+    <div class="box4">
+      <div class="box-col2">
+        <h1>Cozy new chai</h1>
+        <h3>Today calls for a Gingerbread Oatmilk Chai with warming spices and the festive flavor of gingerbread.
+        </h3>
+        <div class="button">
+        <a href="#" class="btn2">Order now</a>
+        </div>
+      </div>
+      <div class="box-col1">
+        <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-87854.png" alt="as" class="box-img">
+      </div>
+    </div>
+    <div class="box5">
+      <div class="box-col1">
+        <h1>Hooray for brulée</h1>
+        <h3>’Tis the season for our Caramel Brulée Latte with a crunchy, caramelly topping.
+        </h3>
+        <div class="button">
+        <a href="#" class="btn2">Order now</a>
+        </div>
+      </div>
+      <div class="box-col2">
+        <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-87857.jpg" alt="as" class="box-img">
+      </div>
+    </div>
+    <div class="box6">
+      <div class="box-col2">
+        <h1>50% off select gifts**** for them and you</h1>
+        <h3>Stop by and save on festive coffee favorites, cold cups, tumblers and more. Now through Dec. 25.
+        </h3>
+        <div class="button">
+        <a href="#" class="btn2">Find a store</a>
+        </div>
+      </div>
+      <div class="box-col1">
+        <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-87889.jpg" alt="as" class="box-img">
+      </div>
+    </div>
+    <div>
+      <div class="discription">
+        <div class="content">
+          *At participating stores. Offer applies to drinks prepared by baristas, including coffee and tea. Limit one drink per member. Cannot be combined with other offers or promotions. This offer is exclusive to you and this Starbucks Rewards account and cannot be reproduced, transferred or used by anyone else.
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="discription">
+        <div class="content">
+          **NO PURCHASE NECESSARY. Participating stores only. Starbucks Partners (employees) are not eligible to win prizes. Ends 12/31/23. To play and for Official Rules, visit https://www.starbucksforlife.com/.
+        </div>
+      </div>
+    </div>
+    <div class="discription">
+      <div class="content">
+        ***© 2023 Warner Bros. Entertainment Inc. All Rights Reserved. Rated PG-13.
+      </div>
+    </div>
+  </div>
+  <div class="discription">
+    <div class="content">
+      ****Valid through 12/25 at participating stores. Offer good on Starbucks Reserve® Christmas 2023; excludes other Starbucks Reserve® coffees and nonseasonal packaged coffees, purchases of Starbucks Cards and Starbucks Card reloads, and nonseasonal merchandise collections. Cannot be combined with other offers or discounts. Limited to stock on hand.
+    </div>
+  </div>
+</div>
+  </main>
+  <footer>
+    <div class="section1">
+      <div class="row">
+          <img src="https://logos-world.net/wp-content/uploads/2020/09/Starbucks-Logo-1992-2011.png" alt="Starbucks logo" class="logo">
+          <ul class="social-icon">
+            <li>
+              <a href="https://www.instagram.com/" target="_blank">
+                <img src="https://img.icons8.com/?size=50&id=32292&format=png" alt="logo">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/" target="_blank">
+                <img src="https://img.icons8.com/?size=50&id=118468&format=png" alt="logo">
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/" target="_blank">
+                <img src="https://img.icons8.com/?size=50&id=437&format=png" alt="logo">
+              </a>
+            </li>
+          </ul>
+      </div>
+    </div>
+    <div class="section2">
+      <ul class="footer-link">
+        <li>
+          <a href="dfghj">About Us</a>
+        </li>
+        <li>
+          <a href="dfghj">Terms of service</a>
+        </li>
+        <li>
+          <a href="dfghj">Privacy policy</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
